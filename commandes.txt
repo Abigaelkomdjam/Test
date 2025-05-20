@@ -1,0 +1,213 @@
+    1  ls
+    2  mkdir webapp
+    3  cd webapp
+    4  touch Dockerfile
+    5  ls
+    6  https://github.com/diranetafen/static-website-example.git
+    7  git clone https://github.com/diranetafen/static-website-example.git
+    8  ls
+    9  sudo docker build -t webapp_abigael:v1 .
+   10  sudo chmod -R 777 ./
+   11  ls
+   12  sh docker_install.sh
+   13  docker --version
+   14  docker info
+   15  sudo docker info
+   16  sudo docker run -i -t --name mon_conteneur_ubuntu ubuntu /bin/bash
+   17  docker images
+   18  ls
+   19  docker images
+   20  ls
+   21  docker build -t webapp_abigael:v1 .
+   22  ls
+   23  sudo chmod -777
+   24  sudo docker build -t webapp_abigael:v1 .
+   25  ls
+   26  cd webapp
+   27  nano dockerfile
+   28  sudo docker build -t webapp_abigael:v1 .
+   29  docker images
+   30  sudo docker images
+   31  sudo docker run --name webapp -d -p 80:80 webapp:v1
+   32  sudo docker run --name webapp -d -p 80:80 webapp_abigael:v1
+   33  sudo docker tag 9b3b1c473c65 kabigael/webapp_abigael:v1
+   34  sudo docker push kabigael/webapp_abigael:v1
+   35  sudo docker login
+   36  sudo docker tag 9b3b1c473c65 kabigael/webapp_abigael:v1
+   37  sudo docker push kabigael/webapp_abigael:v1
+   38  mkdir test
+   39  touch dockerfile
+   40  rm test
+   41  cd ..
+   42  mkdir test
+   43  touch Dockerfile
+   44  cd test
+   45  touch Dockerfile
+   46  touch app.py
+   47  touch requirements.txt
+   48  sudo docker build -t abigael-flask-app:v1 .
+   49  cd test
+   50  ls
+   51  sudo docker build -t abigael-flask-app:v1 .
+   52  docker login
+   53  sudo docker build -t abigael-flask-app:v1 .
+   54  cd test
+   55  docker login
+   56  cd test
+   57  sudo docker build -t abigael-flask-app:v1 .
+   58  sudo docker login
+   59  sudo docker build -t abigael-flask-app:v1 .
+   60  sudo build .
+   61  sudo docker build -t abigael-flask-app:v1 .
+   62  cd test
+   63  sudo docker login
+   64  sudo docker login -u kabigael
+   65  sudo docker login
+   66  cd test
+   67  sudo docker login
+   68  sudo docker build -t abigael-flask-app:v1 .
+   69  sudo docker build -t abigael-flask-app ubuntu /bin/bash
+   70  sudo docker images
+   71  sudo docker build -t abigael-flask-app:v1 .
+   72  cd test
+   73  sudo docker build -t abigael-flask-app:v1 .
+   74  cd webapp
+   75  sudo docker-compose up
+   76  sudo docker compose up
+   77  ls
+   78  sudo docker compose up
+   79  cd test
+   80  sudo docker build -t abigael-flask-app:v1 .
+   81  cd test
+   82  sudo docker build -t abigael-flask-app:v1 .
+   83  sudo docker exec -it B2B bash
+   84  cd ..
+   85  sudo docker run -it --name B2A ubuntu
+   86  sudo docker run -it --name B2B ubuntu
+   87  sudo docker start B2A
+   88  sudo docker start B2B
+   89  sudo docker ps
+   90  sudo docker network create -d bridge abi
+   91  sudo docker network connect abi B2A
+   92  sudo docker network connect abi B2B
+   93  sudo docker network inspect abi
+   94  sudo docker volume create mon_volume_temporaire
+   95  sudo docker run -d --name B2A -v mon_volume_temporaire:/tmp ubuntu
+   96  docker run -d --name B2B -v mon_volume_temporaire:/tmp ubuntu
+   97  sudo docker run -d --name B2A_new -v mon_volume_temporaire:/tmp ubuntu
+   98  sudo docker run -d --name B2B_new -v mon_volume_temporaire:/tmp ubuntu
+   99  sudo docker exec -it B2A bash
+  100  sudo docker exec -it B2B bash
+  101  sudo docker volume create mon_volume_persistant
+  102  sudo docker run -d --name B2A -v mon_volume_persistant:/mnt ubuntu
+  103  sudo docker run -d --name B2A_n -v mon_volume_persistant:/mnt ubuntu
+  104  sudo docker run -d --name B2B_n -v mon_volume_persistant:/mnt ubuntu
+  105  sudo docker exec -it B2A bash
+  106  sudo docker exec -it B2B bash 
+  107  docker volume ls
+  108  sudo docker volume ls
+  109  sudo docker volume
+  110  ls
+  111  sudo docker volume ls
+  112  sudo docker network inspect abi
+  113  sudo docker volume ls
+  114  sudo docker exec -it B2A bash
+  115  sudo docker volume ls
+  116  sudo docker network inspect abi
+  117  cd test
+  118  sudo docker login
+  119  sudo docker build -t abigael-flask-app:v1 .
+  120  cd test
+  121  sudo docker build -t abigael-flask-app:v1 .
+  122  cd test
+  123  sudo docker login
+  124  sudo docker build -t abigael-flask-app:v1 .
+  125  cd test
+  126  sudo DOCKER_BUILDKIT=1 docker build -t abigael-flask-app:v1 .
+  127  sudo systemct1 restart docker
+  128  sudo docker pull python:3.9
+  129  sudo DOCKER_BUILDKIT=1 docker build -t abigael-flask-app:v1 .
+  130  docker volume ls
+  131  cd ..
+  132  sudo docker volume ls
+  133  cd webapp
+  134  sudo docker volume ls
+  135  cd ..
+  136  cd test
+  137  sudo docker volume ls
+  138  cd ..
+  139  sudo docker run -it --name B2A ubuntu
+  140  wsl --update
+  141  sudo docker volume ls
+  142  cd test
+  143  sudo docker login
+  144  sudo docker build -t abigael-flask-app:v1 .
+  145  sudo docker buildx install
+  146  sudo docker build -t abigael-flask-app:v1 .
+  147  sudo docker buildx install
+  148  sudo docker build -t abigael-flask-app:v1 .
+  149  DOCKER_BUILDKIT=0 sudo docker build -t abigael-flask-app:v1 .
+  150  mkdir -p ~/.docker/cli-plugins
+  151  curl -SL https://github.com/docker/buildx/releases/latest/download/docker-buildx-linux-amd64 -o ~/.docker/cli-plugins/docker-buildx
+  152  chmod +x ~/.docker/cli-plugins/docker-buildx
+  153  sudo docker buildx version
+  154  sudo docker build -t abigael-flask-app:v1 .
+  155  sudo mkdir -p /usr/local/lib/docker/cli-plugins
+  156  sudo cp ~/.docker/cli-plugins/docker-buildx /usr/local/lib/docker/cli-plugins/
+  157  # Supprimer le lien symbolique cassé
+  158  sudo rm /usr/local/lib/docker/cli-plugins/docker-buildx
+  159  # Recréer le dossier au cas où il n’existe pas
+  160  sudo mkdir -p /usr/local/lib/docker/cli-plugins
+  161  # Copier le binaire buildx depuis le dossier utilisateur
+  162  sudo cp ~/.docker/cli-plugins/docker-buildx /usr/local/lib/docker/cli-plugins/
+  163  sudo docker build -t abigael-flask-app:v1 .
+  164  ls -l /usr/local/lib/docker/cli-plugins/
+  165  sudo rm /usr/local/lib/docker/cli-plugins/docker-buildx
+  166  sudo ln -s /mnt/wsl/docker-desktop/cli-tools/usr/local/lib/docker/cli-plugins/docker-buildx /usr/local/lib/docker/cli-plugins/docker-buildx
+  167  ls -l /usr/local/lib/docker/cli-plugins/
+  168  sudo docker build -t abigael-flask-app:v1 .
+  169  DOCKER_BUILDKIT=0 sudo docker build -t abigael-flask-app:v1 .
+  170  ls -l /mnt/wsl/docker-desktop/cli-tools/usr/local/lib/docker/cli-plugins/docker-buildx
+  171  sudo rm /usr/local/lib/docker/cli-plugins/docker-buildx
+  172  sudo mkdir -p /usr/local/lib/docker/cli-plugins
+  173  sudo cp ~/.docker/cli-plugins/docker-buildx /usr/local/lib/docker/cli-plugins/docker-buildx
+  174  ls -l /usr/local/lib/docker/cli-plugins/docker-buildx
+  175  /usr/local/lib/docker/cli-plugins/docker-buildx version
+  176  sudo /usr/local/lib/docker/cli-plugins/docker-buildx version
+  177  mkdir -p ~/.docker/cli-plugins
+  178  curl -SL https://github.com/docker/buildx/releases/latest/download/docker-buildx-linux-amd64 -o ~/.docker/cli-plugins/docker-buildx
+  179  chmod +x ~/.docker/cli-plugins/docker-buildx
+  180  curl -I https://github.com
+  181  curl -vSL https://github.com/docker/buildx/releases/latest/download/docker-buildx-linux-amd64 -o ~/docker-buildx-test
+  182  curl -L -o docker-buildx-linux-amd64 https://github.com/docker/buildx/releases/download/v0.23.0/buildx-v0.23.0.linux-amd64
+  183  chmod +x docker-buildx-linux-amd64
+  184  sudo mv docker-buildx-linux-amd64 /usr/local/bin/docker-buildx
+  185  sudo docker buildx version
+  186  docker buildx version
+  187  docker buildx --version
+  188  sudo docker build -t abigael-flask-app:v1 .
+  189  sudo docker buildx build -t abigael-flask-app:v1 .
+  190  docker buildx build -t abigael-flask-app:v1 .
+  191  docker version
+  192  ls -l /usr/local/bin/docker-buildx
+  193  docker buildx create --name mybuilder --use
+  194  docker buildx inspect --bootstrap
+  195  cd test
+  196  docker build -t abigael-flask-app:v1 .
+  197  cd test
+  198  docker build -t abigael-flask-app:v1 .
+  199  docker images
+  200  docker run --name test -d -p 80:80 abigael-flask-app:v1
+  201  docker tag 47f8c78309df kabigael/abigael-flask-app:v1
+  202  docker push kabigael/abigael-flask-app:v1
+  203  git init
+  204  git add .
+  205  git commit -m "Initial commit"
+  206  git config --global user.email abigaelkomdjam@gmail.com
+  207  git config --global user.name Abigaelkomdjam
+  208  git branch -m main
+  209  git add .
+  210  git commit -m "Initial commit"
+  211  git remote add origin https://github.com/Abigaelkomdjam/Test.git
+  212  git push -u origin main
+  213  history > commandes.txt
